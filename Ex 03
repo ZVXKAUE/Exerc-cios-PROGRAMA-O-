@@ -1,0 +1,7 @@
+#include <iostream>
+
+int main() {
+    std::cout << "É FAZER TODOS OS ALGORITMOS PARA APRENDER" << std::endl;
+
+    return 0;
+}
