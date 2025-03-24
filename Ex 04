@@ -1,0 +1,7 @@
+#include <iostream>
+
+int main() {
+    std::cout << "Aprendendo \ Algoritmo" << std::endl;
+    std::cout << "Meu nome eh < KAUE >" << std::endl;
+    return 0;
+}
