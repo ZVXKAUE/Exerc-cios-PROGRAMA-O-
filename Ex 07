@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int produto = 28 * 43;
+
+    cout << "O produto entre 28 e 43 é: " << produto << endl;
+
+    return 0;
+}
