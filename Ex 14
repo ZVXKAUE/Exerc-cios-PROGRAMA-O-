@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float num1, num2;
+
+    
+    cout << "Digite o primeiro número real: ";
+    cin >> num1;
+
+    cout << "Digite o segundo número real: ";
+    cin >> num2;
+
+    
+    float media = (num1 + num2) / 2;
+
+    
+    cout << "Média: " << media << endl;
+
+    return 0;
+}
