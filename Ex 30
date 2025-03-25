@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double raio, altura, volume;
+
+    cout << "Digite o raio da lata (em metros): ";
+    cin >> raio;
+
+    cout << "Digite a altura da lata (em metros): ";
+    cin >> altura;
+
+    volume = 3.14159 * raio * raio * altura;
+
+    cout << "O volume da lata de óleo é: " << volume << " metros cúbicos" << endl;
+
+    return 0;
+}
