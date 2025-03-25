@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float numero;
+
+    
+    cout << "Digite um número real: ";
+    cin >> numero;
+
+    
+    float terco = numero / 3;
+
+   
+    cout << "A terça parte de " << numero << " é " << terco << endl;
+
+    return 0;
+}
