@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num1, num2;
+
+    cout << "Digite o primeiro número: ";
+    cin >> num1;
+
+    cout << "Digite o segundo número: ";
+    cin >> num2;
+
+    int soma = num1 + num2;
+    cout << "Soma: " << soma << endl;
+
+    return 0;
+}
