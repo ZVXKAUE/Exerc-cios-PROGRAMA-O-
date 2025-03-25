@@ -1,0 +1,37 @@
+#include <iostream>
+#include <cmath>  
+using namespace std;
+
+int main() {
+    double anguloEmGraus, anguloEmRadianos;
+   
+    std::cout<< "Digite um ângulo em graus: ";
+    std::cin >> anguloEmGraus;
+    
+    anguloEmRadianos = anguloEmGraus * (M_PI / 180.0);
+    
+    double seno = sin(anguloEmRadianos);
+    double cosseno = cos(anguloEmRadianos);
+    double tangente = tan(anguloEmRadianos);
+    
+    double secante = 0, cosecante = 0, cotangente = 0;
+    
+    if (cosseno != 0) {
+        secante = 1 / cosseno;  
+    }
+    
+    if (seno != 0) {
+        cosecante = 1 / seno;  
+    }
+    if (tangente != 0) {
+        cotangente = 1 / tangente;  
+    }
+    cout << "Seno: " << seno << endl;
+    cout << "Cosseno: " << cosseno << endl;
+    cout << "Tangente: " << tangente << endl;
+    cout << "Secante: " << secante << endl;
+    cout << "Co-secante: " << cosecante << endl;
+    cout << "Co-tangente: " << cotangente << endl;
+
+    return 0;
+}
