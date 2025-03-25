@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float num1, num2, num3, num4;
+
+    cout << "Digite o primeiro número: ";
+    cin >> num1;
+
+    cout << "Digite o segundo número: ";
+    cin >> num2;
+
+    cout << "Digite o terceiro número: ";
+    cin >> num3;
+
+    cout << "Digite o quarto número: ";
+    cin >> num4;
+
+    float somaPesos = (num1 * 1) + (num2 * 2) + (num3 * 3) + (num4 * 4);
+    float somaPesosTotais = 1 + 2 + 3 + 4;
+    float mediaPonderada = somaPesos / somaPesosTotais;
+    
+    cout << "Média ponderada: " << mediaPonderada << endl;
+
+    return 0;
+}
