@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double salarioMinimo, quilowattsConsumidos;
+
+   
+    cout << "Digite o valor do salário mínimo: R$ ";
+    cin >> salarioMinimo;
+
+    cout << "Digite a quantidade de quilowatts consumidos: ";
+    cin >> quilowattsConsumidos;
+
+    
+    double valorCadaKWh = (salarioMinimo / 7) / 100;
+
+    
+    double valorTotal = quilowattsConsumidos * valorCadaKWh;
+
+    
+    double desconto = valorTotal * 0.10;
+    double valorComDesconto = valorTotal - desconto;
+
+   
+    cout << "Valor de cada quilowatt: R$ " << valorCadaKWh << endl;
+    cout << "Valor total a ser pago: R$ " << valorTotal << endl;
+    cout << "Valor com desconto de 10%: R$ " << valorComDesconto << endl;
+
+    return 0;
+}
