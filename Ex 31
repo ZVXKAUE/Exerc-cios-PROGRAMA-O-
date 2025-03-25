@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double tempoGasto, velocidadeMedia, distanciaPercorrida, litrosConsumidos;
+
+    cout << "Digite o tempo gasto na viagem (em horas): ";
+    cin >> tempoGasto;
+
+    cout << "Digite a velocidade média durante a viagem (em km/h): ";
+    cin >> velocidadeMedia;
+
+    distanciaPercorrida = velocidadeMedia * tempoGasto;
+
+    litrosConsumidos = distanciaPercorrida / 12.0;
+    
+    cout << "Velocidade média: " << velocidadeMedia << " km/h" << endl;
+    cout << "Tempo gasto na viagem: " << tempoGasto << " horas" << endl;
+    cout << "Distância percorrida: " << distanciaPercorrida << " km" << endl;
+    cout << "Quantidade de litros utilizados: " << litrosConsumidos << " litros" << endl;
+
+    return 0;
+}
