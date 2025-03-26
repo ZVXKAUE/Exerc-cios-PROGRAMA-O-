@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double salarioPessoa, salarioMinimo, quantidadeSalarios;
+   
+    salarioMinimo = 1300.00;   
+
+    cout << "Digite o salário da pessoa: R$ ";
+    cin >> salarioPessoa;
+
+    quantidadeSalarios = salarioPessoa / salarioMinimo;
+
+    cout << "O salário da pessoa corresponde a " << quantidadeSalarios << " salários mínimos." << endl;
+
+    return 0;
+}
