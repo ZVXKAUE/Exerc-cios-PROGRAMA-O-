@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int A, B, temp;
+
+    cout << "Digite o valor de A: ";
+    cin >> A;
+    cout << "Digite o valor de B: ";
+    cin >> B;
+    cout << "Antes da troca: A = " << A << ", B = " << B << endl;
+    temp = A;  
+    A = B;     
+    B = temp;  
+    
+    cout << "Depois da troca: A = " << A << ", B = " << B << endl;
+
+    return 0;
+}
