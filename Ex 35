@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double valorDespesa, gorjeta, valorTotal;
+
+    cout << "Digite o valor gasto com as despesas: R$ ";
+    cin >> valorDespesa;
+
+    gorjeta = valorDespesa * 0.10;
+
+    valorTotal = valorDespesa + gorjeta;
+
+    cout << "O valor total com a gorjeta de 10% é: R$ " << valorTotal << endl;
+
+    return 0;
+}
