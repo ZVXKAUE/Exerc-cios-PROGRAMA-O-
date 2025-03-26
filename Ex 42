@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int conta, inverso, resultado, soma = 0;
+
+    cout << "Digite o número da conta (com 3 dígitos): ";
+    cin >> conta;
+
+    int unidade = conta % 10;
+    int dezena = (conta / 10) % 10;
+    int centena = conta / 100;
+
+    inverso = unidade * 100 + dezena * 10 + centena; 
+
+    resultado = conta * inverso;
+
+    int digito1 = resultado / 100;    
+    int digito2 = (resultado / 10) % 10;  
+    int digito3 = resultado % 10;   
+
+    soma = digito1 * 1 + digito2 * 2 + digito3 * 3;
+
+    int digitoVerificador = soma % 10;
+
+    cout << "O dígito verificador da conta " << conta << " é: " << digitoVerificador << endl;
+
+    return 0;
+}
