@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int quantidadeFitas;
+    double valorAluguel;
+
+    cout << "Digite a quantidade de fitas: ";
+    cin >> quantidadeFitas;
+    
+    cout << "Digite o valor do aluguel de cada fita: R$ ";
+    cin >> valorAluguel;
+
+    double faturamentoAnual = (quantidadeFitas / 3.0) * valorAluguel * 12;
+    cout << "Faturamento anual da locadora: R$ " << faturamentoAnual << endl;
+
+    double multaPorMes = (quantidadeFitas / 30.0) * valorAluguel * 0.10;
+    cout << "Valor ganho com multas por mês: R$ " << multaPorMes << endl;
+
+    double fitasEstragadas = quantidadeFitas * 0.02;
+    double fitasReposicao = quantidadeFitas / 10.0;
+    int quantidadeFinalFitas = quantidadeFitas - fitasEstragadas + fitasReposicao;
+    cout << "Quantidade de fitas ao final do ano: " << quantidadeFinalFitas << endl;
+
+    return 0;
+}
