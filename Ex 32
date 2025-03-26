@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    double valor, taxa, tempo, prestacao;
+    cout << "Digite o valor da prestacao original: ";
+    cin >> valor;
+    cout << "Digite a taxa de juros (% ao periodo): ";
+    cin >> taxa
+    cout << "Digite o tempo de atraso (em periodos): ";
+    cin >> tempo;
+    prestacao = valor + (valor * (taxa / 100) * tempo);
+
+    cout << "O valor da prestacao em atraso é: R$ " << prestacao << endl;
+
+    return 0;
+}
