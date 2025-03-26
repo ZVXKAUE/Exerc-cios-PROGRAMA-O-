@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int hora, minuto, minutosTotais;
+
+    
+    cout << "Digite a hora (0-23): ";
+    cin >> hora;
+    
+    cout << "Digite os minutos (0-59): ";
+    cin >> minuto
+    if (hora < 0 || hora > 23 || minuto < 0 || minuto > 59) {
+        cout << "Valor invalido para hora ou minuto!" << endl;
+        return 1;  
+    }  
+    minutosTotais = hora * 60 + minuto
+
+    cout << "O total de minutos desde o inicio do dia é: " << minutosTotais << " minutos." << endl;
+
+    return 0;
+}
